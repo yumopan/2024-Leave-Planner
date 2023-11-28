@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Styles for the container holding the counter and reset button */
+.counter-reset-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the leave counter */
+#leaveCounter {
+  margin-right: 10px;
+  
+}
+
+/* Style for the reset button */
+#resetButton {
+  padding: 5px 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.33% - 20px));
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #eee;
+}
+
+td {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: lightgreen;
+}
+
+.selected {
+  background-color: lightgreen; /* Green color for selected dates */
+}
+
+.public-holiday {
+  background-color: lightblue;
+}
